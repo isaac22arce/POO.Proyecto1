@@ -5,10 +5,31 @@
  */
 package Recetario;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author lenovo
+ * @author Alexandra Imaicela
  */
 public class Receta {
+        String clasificacion;
+    ArrayList<Producto> productos; //Lista de productos de la receta
+    ArrayList<Integer> cantidadGramos;
+
+    public Receta(String clasificacion, ArrayList<Producto> productos, ArrayList<Integer> cantidadGramos) {
+        this.clasificacion = clasificacion;
+        this.productos = productos;
+        this.cantidadGramos = cantidadGramos;
+    }
+    
+    /**
+     * metodo que calcula la informacin nutricional de la receta
+     */
+    public double informacionNutricionalReceta(){
+        double calculo=0;
+        return calculo;
+    }    
+    
+    
     
 }
