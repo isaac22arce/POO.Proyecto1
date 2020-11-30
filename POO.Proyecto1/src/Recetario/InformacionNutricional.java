@@ -7,7 +7,7 @@ package Recetario;
 
 /**
  *
- * @author lenovo
+ * @author AlexandraImaicela
  */
 public class InformacionNutricional {
         private double calorias;
