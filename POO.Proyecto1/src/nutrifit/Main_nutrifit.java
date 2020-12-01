@@ -16,7 +16,7 @@ import java.util.Scanner;
  *
  * @author Nicolas Carrasco
  */
-public class Main {
+public class Main_nutrifit {
  public static ArrayList<Producto> PRODUCTOS = new ArrayList<>();
     static Scanner sc = new Scanner(System.in);
     /**
