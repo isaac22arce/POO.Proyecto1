@@ -23,5 +23,44 @@ public class InformacionNutricional {
         this.grasas = grasas;
         this.fibras = fibras;
     }
+     public double getCalorias() {
+        return calorias;
+    }
+
+    public void setCalorias(double calorias) {
+        this.calorias = calorias;
+    }
+
+    public double getHidratosDeCarbono() {
+        return hidratosDeCarbono;
+    }
+
+    public void setHidratosDeCarbono(double hidratosDeCarbono) {
+        this.hidratosDeCarbono = hidratosDeCarbono;
+    }
+
+    public double getProteinas() {
+        return proteinas;
+    }
+
+    public void setProteinas(double proteinas) {
+        this.proteinas = proteinas;
+    }
+
+    public double getGrasas() {
+        return grasas;
+    }
+
+    public void setGrasas(double grasas) {
+        this.grasas = grasas;
+    }
+
+    public double getFibras() {
+        return fibras;
+    }
+
+    public void setFibras(double fibras) {
+        this.fibras = fibras;
+    }
     
 }
