@@ -5,16 +5,20 @@
  */
 package clientes;
 
+import java.util.ArrayList;
+import poo.proyecto1.Menu;
+
 /**
  *
  * @author Isaac
  */
 public class Fresh extends Cliente {
     private boolean envio;
+   
     
     //metodo
-    public Fresh(String cedula, String nombres,String apellidos, String telefono, String correo, String direccion,boolean envio){
-        super(cedula,nombres,apellidos,telefono,correo,direccion);
+    public Fresh(String cedula, String nombres,String apellidos, String telefono, String correo, String direccion,ArrayList<Menu> menu,boolean envio){
+        super(cedula,nombres,apellidos,telefono,correo,direccion,menu);
         this.envio=envio;
     }
     
