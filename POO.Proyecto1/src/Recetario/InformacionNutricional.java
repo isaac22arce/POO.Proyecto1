@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 package Recetario;
-
+import java.io.Serializable;
 /**
  *
  * @author AlexandraImaicela
  */
-public class InformacionNutricional {
-        private double calorias;
+public class InformacionNutricional implements Serializable {
+    private double calorias;
     private double hidratosDeCarbono;
     private double proteinas; 
     private double grasas;
@@ -61,6 +61,5 @@ public class InformacionNutricional {
 
     public void setFibras(double fibras) {
         this.fibras = fibras;
-    }
-    
+    }  
 }
