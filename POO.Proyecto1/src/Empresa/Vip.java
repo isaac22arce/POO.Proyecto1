@@ -5,8 +5,6 @@
  */
 package Empresa;
 
-import java.util.ArrayList;
-import poo.proyecto1.Menu;
 
 /**
  *
@@ -19,8 +17,8 @@ public class Vip extends Cliente{
     private String profesion;
     
     //metodos
-    public Vip(String cedula, String nombres, String apellidos, String telefono, String correo,String direccion,ArrayList<Menu> menu,int peso,int estatura,int hes,String profesion ){
-        super(cedula,nombres,apellidos,telefono,correo, direccion,menu);
+    public Vip(String cedula, String nombres, String apellidos, String telefono, String correo,String direccion,int peso,int estatura,int hes,String profesion ){
+        super(cedula,nombres,apellidos,telefono,correo, direccion);
         this.peso=peso;
         this.estatura=estatura;
         this.hes=hes;

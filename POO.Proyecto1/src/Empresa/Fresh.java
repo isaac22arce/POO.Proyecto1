@@ -5,8 +5,6 @@
  */
 package Empresa;
 
-import java.util.ArrayList;
-import poo.proyecto1.Menu;
 
 /**
  *
@@ -17,8 +15,8 @@ public class Fresh extends Cliente {
    
     
     //metodo
-    public Fresh(String cedula, String nombres,String apellidos, String telefono, String correo, String direccion,ArrayList<Menu> menu,boolean envio){
-        super(cedula,nombres,apellidos,telefono,correo,direccion,menu);
+    public Fresh(String cedula, String nombres,String apellidos, String telefono, String correo, String direccion,boolean envio){
+        super(cedula,nombres,apellidos,telefono,correo,direccion);
         this.envio=envio;
     }
     
