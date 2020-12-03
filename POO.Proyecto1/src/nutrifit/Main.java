@@ -96,5 +96,58 @@ public class Main {
             System.out.println("error al leer el archivo productos "+e);
         }  
     }
+    /*
+    metodo que carga la informacion para clientes
+    */
+    public void cargarDatosCliente(){
+        System.out.print("Ingresar cedula: ");
+        String cedula=sc.nextLine();
+        val.isCedula(cedula);
+        System.out.print("Ingresar nombre: ");
+        String nombre=sc.nextLine();
+        val.isStringCorrecto(nombre);
+        System.out.print("Ingresar Apellido: ");
+        String Apellido=sc.nextLine();
+        val.isStringCorrecto(Apellido);
+        System.out.print("Ingresar Telofono: ");
+        String telefono=sc.nextLine();
+        val.isCedula(telefono); // por que los telefonos tambien usan digitos y tienen 10 caractares
+        System.out.print("Ingresar Correo electronico: ");
+        String correo=sc.nextLine();
+        val.isCorreo(correo);
+        System.out.print("Ingresar direccion: ");
+        String direccion=sc.nextLine();
+        System.out.println("Seleccione opcion para tipo de usuario");
+        System.out.println("Es usuario 1.VIP");
+        System.out.println("Es usuario 2.FRESH");
+        System.out.print("Ingresar Opcion: ");
+        String opcionSuscripcion = sc.nextLine();
+        int opSuscripcion = val.validaOpcionSuscripcion(opcionSuscripcion);
+        Date fechaInicioSuscripcion = new Date();
+        
+        if(opSuscripcion==1){
+            System.out.print("Ingresar Peso Kg: ");
+            String peso=sc.nextLine();
+            double pesoKg = val.convierteCadenaDouble(peso);
+            System.out.print("Ingresar Peso estaturaCm: ");
+            String estatura=sc.nextLine();
+            int estaturaCm = Integer.parseInt(estatura);
+            System.out.print("Ingresar Horas de ejercicio que realiza a la semana: ");
+            String horasEjercicioSemanal=sc.nextLine();
+            System.out.print("Ingresar Profesion: ");
+            String profesion=sc.nextLine();
+            
+            ClienteVip cv= new ClienteVip(pesoKg, estaturaCm, horasEjercicioSemanal, profesion, cedula, nombre, Apellido
+                                           ,telefono, correo, direccion, fechaInicioSuscripcion);
+            
+            this.clientes.add(cv);
+        }else{
+            ClienteFresh cv= new ClienteFresh(cedula, nombre, Apellido
+                                            ,telefono, correo, direccion, fechaInicioSuscripcion);
+            this.clientes.add(cv);
+        }
+        this.serializarClientes();
+    
+    }
 
 }
