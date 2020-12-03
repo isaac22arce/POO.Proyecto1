@@ -5,18 +5,10 @@
  */
 package Validaciones;
 
-import java.util.Scanner;
-
 /**
  *
- * @author Alexandra Imaicela
+ * @author Isaac
  */
 public class Validaciones {
-    public static int validaCargaProductos = 0;
-    Scanner sc = new Scanner(System.in);
-    
-    public Validaciones() {
-    }
-    
     
 }

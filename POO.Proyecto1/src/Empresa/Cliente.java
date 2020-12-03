@@ -6,8 +6,6 @@
 package Empresa;
 
 
-
-
 /**
  *
  * @author Isaac
@@ -19,6 +17,8 @@ public class Cliente {
     protected String telefono;
     protected String correo;
     protected String direccion;
+    //las fechas solo las utilizamos en las clases hijas 
+          
     
     //metodos
     public Cliente(String cedula, String nombres ,String apellidos, String telefono, String correo, String direccion){
@@ -35,4 +35,6 @@ public class Cliente {
         }
     
     
+
+
 
