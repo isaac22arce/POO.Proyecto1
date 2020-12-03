@@ -7,8 +7,10 @@ package Mail;
 
 /**
  *
- * @author lenovo
+ * @author Alexandra Imaicela
  */
 public class Correo {
+     private final static String REMITENTE = "nutrifit456@gmail.com";
+     private final static String CONTRASENA= "Contra,1";
     
 }
