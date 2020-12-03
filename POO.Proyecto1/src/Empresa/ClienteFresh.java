@@ -10,12 +10,12 @@ package Empresa;
  *
  * @author Isaac
  */
-public class Fresh extends Cliente {
+public class ClienteFresh extends Cliente {
     private boolean envio;
    
     
     //metodo
-    public Fresh(String cedula, String nombres,String apellidos, String telefono, String correo, String direccion,boolean envio){
+    public ClienteFresh(String cedula, String nombres,String apellidos, String telefono, String correo, String direccion,boolean envio){
         super(cedula,nombres,apellidos,telefono,correo,direccion);
         this.envio=envio;
     }

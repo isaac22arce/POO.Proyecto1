@@ -10,14 +10,14 @@ package Empresa;
  *
  * @author Isaac
  */
-public class Vip extends Cliente{
+public class ClienteVip extends Cliente{
     private int peso;
     private int estatura;
     private int hes;//horas de ejercicios semanales
     private String profesion;
     
     //metodos
-    public Vip(String cedula, String nombres, String apellidos, String telefono, String correo,String direccion,int peso,int estatura,int hes,String profesion ){
+    public ClienteVip(String cedula, String nombres, String apellidos, String telefono, String correo,String direccion,int peso,int estatura,int hes,String profesion ){
         super(cedula,nombres,apellidos,telefono,correo, direccion);
         this.peso=peso;
         this.estatura=estatura;
