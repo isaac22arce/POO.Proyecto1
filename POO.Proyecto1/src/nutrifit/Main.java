@@ -237,11 +237,11 @@ public class Main {
     public void crearMenuSemanal(){
         if (val.validaCargaMenu>0){
         Date fechaInicio = val.validDateForMenu();
-        menuSemanal = new MenuSemanal(fechaInicio);
-        menuSemanal.crearMenu("Desayuno", recetas);
-        menuSemanal.crearMenu("Almuerzo", recetas);
-        menuSemanal.crearMenu("Cena", recetas);
-        System.out.println(menuSemanal.getDesayuno());    
+            menuSemanal = new MenuSemanal(fechaInicio);
+            menuSemanal.crearMenu("Desayuno", recetas);
+            menuSemanal.crearMenu("Almuerzo", recetas);
+            menuSemanal.crearMenu("Cena", recetas);
+            System.out.println(menuSemanal.getDesayuno());    
     } else {
             System.out.println("Primero ingrese a la opcion 4");
         }}
