@@ -13,10 +13,10 @@ import java.io.Serializable;
  * @author Alexandra Imaicela
  */
 public class Receta implements Serializable{
-    String clasificacion;
-    ArrayList<Producto> productos; //Lista de productos de la receta
-    ArrayList<Integer> cantidadGramos;
-    String preparacion;
+    private String clasificacion;
+    private ArrayList<Producto> productos; //Lista de productos de la receta
+    private ArrayList<Integer> cantidadGramos;
+    private String preparacion;
 
     public Receta(String clasificacion, ArrayList<Producto> productos, ArrayList<Integer> cantidadGramos, String preparacion) {
         this.clasificacion = clasificacion;
@@ -49,6 +49,52 @@ public class Receta implements Serializable{
     
     
     }
+    public String getClasificacion() {
+        return clasificacion;
+    }
+
+    public void setClasificacion(String clasificacion) {
+        this.clasificacion = clasificacion;
+    }
+
+    public ArrayList<Producto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(ArrayList<Producto> productos) {
+        this.productos = productos;
+    }
+
+    public ArrayList<Integer> getCantidadGramos() {
+        return cantidadGramos;
+    }
+
+    public void setCantidadGramos(ArrayList<Integer> cantidadGramos) {
+        this.cantidadGramos = cantidadGramos;
+    }
+
+    public String getPreparacion() {
+        return preparacion;
+    }
+
+    public void setPreparacion(String preparacion) {
+        this.preparacion = preparacion;
+    }
+
+    @Override
+    public String toString() {
+        String  msjGramos = "";
+        double[] infoN = this.informacionNutricionalReceta();
+        String  infoNutriReceta ="calorias: "+infoN[0]+" \n";
+        
+        for(int i=0;i<cantidadGramos.size();i++){
+            Producto p = productos.get(i);
+            Integer cantidad = cantidadGramos.get(i);
+            msjGramos += p.getNombre()+", Cantidad gramos: "+cantidad+"\n";
+        }
+        return "Receta{\n" + "clasificacion=" + clasificacion +"\n"+ "productos=\n[\n" + msjGramos + "]\n"+infoNutriReceta+"preparacion=" + preparacion +"\n"+ '}'+ "\n";
+    }
+    
         
     
     
