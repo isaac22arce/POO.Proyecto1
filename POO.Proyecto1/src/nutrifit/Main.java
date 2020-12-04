@@ -28,7 +28,7 @@ import java.util.Scanner;
 
 /**
  *
- * @Nicolas Carrasco
+ * @NicolasCarrascoR
  */
 public class Main {
     
