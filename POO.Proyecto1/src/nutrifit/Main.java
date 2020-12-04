@@ -76,6 +76,7 @@ public class Main {
                     break;
                 case "2":
                     if(val.isChargedProducts(val.validaCargaProductos)){
+                        val.validaCargaMenu++;
                         this.crearReceta();
                     }else{
                         System.out.println("primero ingrese a la opcion 1");

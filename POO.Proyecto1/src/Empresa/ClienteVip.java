@@ -83,10 +83,8 @@ public class ClienteVip extends Cliente{
     public int getValorSuscripcion() {
         return valorSuscripcion;
     }
+
     
-    
-    
-    
-    
+     
 }
 
