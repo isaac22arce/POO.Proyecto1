@@ -14,9 +14,9 @@ import java.util.Date;
 public class MenuSemanal {
     Date fechaInicio;
     Date fechaFin;
-    ArrayList<Receta> desayuno;
-    ArrayList<Receta> almuerzo;
-    ArrayList<Receta> merienda;
+    private ArrayList<Receta> desayuno;
+    private ArrayList<Receta> almuerzo;
+    private ArrayList<Receta> merienda;
 
     public MenuSemanal(Date fechaInicio) {
         this.fechaInicio = new Date();
