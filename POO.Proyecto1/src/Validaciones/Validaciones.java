@@ -17,7 +17,7 @@ import static nutrifit.Main.PRODUCTOS;
 
 /**
  *
- * @author Isaac Arce 
+ * @author Isaac
  */
 public class Validaciones {
     public static int validaCargaProductos = 0;
@@ -146,6 +146,7 @@ public class Validaciones {
     //
     public Date validDateForMenu(){
         while(true){
+            System.out.println("Recuerde escoger un dia que sea lunes");
             System.out.print("Ingresar Fecha en formato MM-dd-yyyy: ");
             String f=sc.nextLine();
       
@@ -157,6 +158,8 @@ public class Validaciones {
             } catch (ParseException ex) {
                 Logger.getLogger(Validaciones.class.getName()).log(Level.SEVERE, null, ex);
             }
+            calendar.setTime(fechaCambiada);
+            System.out.println(calendar.getTime());
             
             if(calendar.get(Calendar.DAY_OF_WEEK)==2){
                 
@@ -178,7 +181,26 @@ public class Validaciones {
         }
         return false;
     }
+    //
+    /**
+     * metodo que escoge una opcion de cliente
+     */
+    public String opcionTipoCliente(){
+        String tipo="";
+        while(!tipo.equals("1") || !tipo.equals("2")){
+            System.out.println("Ingresar opcion del tipo de ciente que desea consultar: ");
+            System.out.println("1. VIP   2. FRESH");
+            tipo =sc.nextLine();
+            
+            if(tipo.equals("1")){
+                return "VIP";
+            }else if (tipo.equals("2")){
+                return "FRESH";
+            }
+        
+        }
+        return null;
+    }
     
     
 }
-
