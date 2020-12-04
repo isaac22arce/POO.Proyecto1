@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  *
- * @author Isaac 
+ * @author Isaac
  */
 public class Cliente implements Serializable{
     private String cedula;
@@ -22,7 +22,6 @@ public class Cliente implements Serializable{
     private String direccion;
     private Date fechaInicioSuscripcion;
     private Date fechaFinSuscripcion;
-    //fechas 
 
     public Cliente(String cedula, String nombre, String apellido, String telefono, String correoElectronico, String direccion,
             Date fechaInicioSuscripcion) {
@@ -33,12 +32,12 @@ public class Cliente implements Serializable{
         this.correoElectronico = correoElectronico;
         this.direccion = direccion;
         this.fechaInicioSuscripcion=fechaInicioSuscripcion;
-        this.getFechaFinSuscripcion();
+        this.LLenaFechaFinSuscripcion();
     }
     /*
     metodo que calcula el fin de la fecha de suscripcion del cliente
     */
-    private void getFechaFinSuscripcion(){
+    public void LLenaFechaFinSuscripcion(){
         Calendar calendar = Calendar.getInstance();
 	
         calendar.setTime(fechaInicioSuscripcion); // Configuramos la fecha que se recibe
@@ -108,6 +107,10 @@ public class Cliente implements Serializable{
 
     public void setFechaInicioSuscripcion(Date fechaInicioSuscripcion) {
         this.fechaInicioSuscripcion = fechaInicioSuscripcion;
+    }
+
+    public Date getFechaFinSuscripcion() {
+        return fechaFinSuscripcion;
     }
     
 
