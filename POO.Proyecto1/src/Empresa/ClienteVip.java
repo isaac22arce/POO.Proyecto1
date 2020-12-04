@@ -19,6 +19,7 @@ public class ClienteVip extends Cliente{
     private int estaturaCm;
     private String horasEjercicioSemanal;
     private String profesion;
+    //metodos
 
     public ClienteVip(double pesoKg, int estaturaCm, String horasEjercicioSemanal, String profesion, String cedula, String nombre, String apellido, String telefono, String correoElectronico, String direccion, Date fechaInicioSuscripcion) {
         super(cedula, nombre, apellido, telefono, correoElectronico, direccion, fechaInicioSuscripcion);

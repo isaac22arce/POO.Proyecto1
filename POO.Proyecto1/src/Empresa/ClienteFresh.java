@@ -15,6 +15,7 @@ public class ClienteFresh extends Cliente {
     private boolean isVip = false;
     private final int valorSuscripcion = 70;
     private final int cobroDomicilio = 30;
+    //metodos
 
     public ClienteFresh(String cedula, String nombre, String apellido, String telefono, String correoElectronico, String direccion, Date fechaInicioSuscripcion) {
         super(cedula, nombre, apellido, telefono, correoElectronico, direccion, fechaInicioSuscripcion);

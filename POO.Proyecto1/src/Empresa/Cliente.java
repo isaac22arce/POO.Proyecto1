@@ -22,6 +22,7 @@ public class Cliente implements Serializable{
     private String direccion;
     private Date fechaInicioSuscripcion;
     private Date fechaFinSuscripcion;
+    //metodos 
 
     public Cliente(String cedula, String nombre, String apellido, String telefono, String correoElectronico, String direccion,
             Date fechaInicioSuscripcion) {
