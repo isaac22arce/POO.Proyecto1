@@ -17,7 +17,7 @@ import static nutrifit.Main.PRODUCTOS;
 
 /**
  *
- * @author 
+ * @author Isaac
  */
 public class Validaciones {
     public static int validaCargaProductos = 0;
@@ -79,8 +79,9 @@ public class Validaciones {
         }
     }
    
-    
-     // metodo que valida cedula
+    /**
+    metodo que valida cedula
+    */
     public void isCedula(String cedula){
         while(!(isNumeric(cedula) && cedula.length()==10)){
             System.out.println("Asegurse de ingresar 10 digitos nuemericos ");
@@ -90,7 +91,9 @@ public class Validaciones {
         }
         
     }
-    // metodo que valida la opcion sobre el cliente
+    /**
+     * metodo que valida la opcion sobre el cliente
+     */
     public int validaOpcionSuscripcion(String op){
         while(true){
             if(this.isNumeric(op)){
@@ -201,4 +204,3 @@ public class Validaciones {
     
     
 }
-
