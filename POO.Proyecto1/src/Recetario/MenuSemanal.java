@@ -62,4 +62,48 @@ public class MenuSemanal {
         fechaFin = calendar.getTime();
     }
     
-}
+     /**
+     * metodo que llena los desayunos, almuerzos y cenas
+     * del menu semanal
+     * @param tipoDeComida
+     */
+    
+    public void crearMenu(String tipo,ArrayList<Receta> recetas){
+        ArrayList<Receta> recetasTipo = new ArrayList<>();
+        if(tipo.equals("Desayuno")){
+            for(Receta r:recetas){
+                if(r.getClasificacion().equals("Desayuno")){
+                    recetasTipo.add(r);
+                }
+            }
+            this.llenaMenuIndividual(recetasTipo, this.desayuno);
+        } else if(tipo.equals("Almuerzo")){
+          for(Receta r:recetas){
+                if(r.getClasificacion().equals("Almuerzo")){
+                    recetasTipo.add(r);
+                }
+            }
+            this.llenaMenuIndividual(recetasTipo, this.almuerzo);  
+        } else{
+            for(Receta r:recetas){
+                if(r.getClasificacion().equals("Cena")){
+                    recetasTipo.add(r);
+                }
+            }
+            this.llenaMenuIndividual(recetasTipo, this.merienda);
+        }
+    }
+//
+    /**
+     * metodo que llena la lista vacia de la receta para el menu de la semana
+     * @param recetasTipo
+     * @param recetaVacia 
+     */    
+    
+    private void llenaMenuIndividual(ArrayList<Receta> recetasTipo,ArrayList<Receta> recetaVacia){
+        for(int i=0;i<5;i++){
+            int aleatorio = (int) (Math.random()*recetasTipo.size());// devuelve un aleatorio entre 0 y el numero de elementos de recetasTipo no incluye extremos
+            Receta rec = recetasTipo.get(aleatorio);
+            recetaVacia.add(rec);
+        }
+}}
