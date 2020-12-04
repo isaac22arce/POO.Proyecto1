@@ -37,4 +37,9 @@ public class Producto implements Serializable {
         this.InfoNutricionalx100g = InfoNutricionalx100g;
     }
     
+    @Override
+    public String toString() {
+        return "Producto{" + "nombre=" + nombre + '}'+"\n";
+    }
+    
 }

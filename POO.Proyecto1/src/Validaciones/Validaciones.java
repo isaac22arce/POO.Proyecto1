@@ -22,6 +22,7 @@ import static nutrifit.Main.PRODUCTOS;
 public class Validaciones {
     public static int validaCargaProductos = 0;
     Scanner sc = new Scanner(System.in);
+    public static int validaCargaMenu=0;
 
     public Validaciones() {
     }
