@@ -244,7 +244,7 @@ public class Main {
             menuSemanal.crearMenu("Cena", recetas);
             System.out.println(menuSemanal.getDesayuno());    
     } else {
-            System.out.println("Primero ingrese a la opcion 4");
+            System.out.println("Primero ingrese a la opcion 2");
         }}
     //
     /**
